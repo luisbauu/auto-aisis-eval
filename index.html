@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auto Aisis Evaluator</title>
+    <script src="popup.js"></script>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        width: 400px;
+        height: 200px;
+      }
+
+      #autoClickButton {
+        background-color: #003a6c;
+        color: white;
+        padding: 10px 20px;
+        margin-top: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      #autoClickButton:hover {
+        background-color: #002549;
+      }
+
+      hr {
+        border: 0;
+        height: 2px;
+        margin: 20px 0;
+        background: #333;
+        background-image: linear-gradient(to right, #003a6c, #ccc);
+      }
+
+      h5 {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        width: 400px;
+        background-color: #003a6c;
+        color: white;
+        padding: 10px 20px;
+      "
+    >
+      <h2>Auto AISIS Evaluator</h2>
+    </div>
+    <button id="autoClickButton">Auto Fill Form</button>
+    <hr />
+
+    <h3 style="margin-top: 0px">Rating For Everything</h3>
+    <div class="radioDiv">
+      <input type="radio" id="one" name="rating" value="1" />
+      <label for="one">1</label>
+      <input type="radio" id="two" name="rating" value="2" />
+      <label for="two">2</label>
+      <input type="radio" id="three" name="rating" value="3" />
+      <label for="three">3</label>
+      <input type="radio" id="four" name="rating" value="4" checked />
+      <label for="four">4</label>
+      <input type="radio" id="five" name="rating" value="5" />
+      <label for="five">5</label>
+    </div>
+
+    <hr />
+    <h4>I. ABOUT THE COURSE</h4>
+
+    <h5>What did you like best about the course?</h5>
+    <textarea name="q1" rows="10" cols="35" maxlength="1000"></textarea>
+
+    <h5>What did you like least about the course?</h5>
+    <textarea name="q2" rows="10" cols="35" maxlength="1000"></textarea>
+    <h5>What are your suggestions/comments for the course?</h5>
+    <textarea name="q3" rows="10" cols="35" maxlength="1000"></textarea>
+    <h5>What challenges did you encounter with regard to learning?</h5>
+    <textarea name="q4" rows="10" cols="35" maxlength="1000"></textarea>
+    <hr />
+
+    <h4>II. ABOUT THE TEACHER</h4>
+    <h5>What did you like best about the teacher?</h5>
+    <textarea name="q5" rows="10" cols="35" maxlength="1000"></textarea>
+    <h5>What did you like least about the teacher?</h5>
+    <textarea name="q6" rows="10" cols="35" maxlength="1000"></textarea>
+    <h5>What are your suggestions/comments for the teacher?</h5>
+    <textarea name="q7" rows="10" cols="35" maxlength="1000"></textarea>
+    <hr />
+
+    <h4>III. ABOUT THE LEARNER</h4>
+    <h5>What concrete measures helped facilitate my own learning?</h5>
+    <textarea name="q8" rows="10" cols="35" maxlength="1000"></textarea>
+    <h5>
+      What insight/s can I glean from my learning experience as it relates to my
+      desire to learn?
+    </h5>
+    <textarea
+      name="q9"
+      rows="10"
+      cols="35"
+      maxlength="1000"
+      style="margin-bottom: 20px"
+    ></textarea>
+  </body>
+</html>
